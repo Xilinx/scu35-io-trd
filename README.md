@@ -19,7 +19,7 @@ This repository provides all the sources to build the TRD.
 
 ## Documentation
 
-The SCU35 IO Targeted Reference Design is supported by a User Guide and instruction document available on the AMD Targeted Information Portal:
+The SCU35 IO Targeted Reference Design is supported by a User Guide and instruction document available on the AMD Technical Information Portal:
 
 - [User Guide](https://docs.amd.com/r/en-US/xd332-scu35-trd-ug)
 - [Instructions](https://docs.amd.com/r/en-US/xd333-scu35-trd-instructions)
@@ -35,4 +35,5 @@ The SCU35 IO Targeted Reference Design is supported by a User Guide and instruct
 <p class="sphinxhide" align="center"><sub>Copyright © 2025 Advanced Micro Devices, Inc.</sub></p>
 
 <p class="sphinxhide" align="center"><sup><a href="https://www.amd.com/en/corporate/copyright">Terms and Conditions</a></sup></p>
+
 
