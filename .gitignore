@@ -1,0 +1,4 @@
+hw/project/
+hw/vivado*
+hw/.Xil/
+sw/workspace/

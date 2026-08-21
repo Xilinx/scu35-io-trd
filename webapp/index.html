@@ -1,0 +1,77 @@
+<!-- Copyright (C) 2025, Advanced Micro Devices, Inc. All rights reserved.
+SPDX-License-Identifier: MIT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serial Port Reader</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/pushButton.css">
+  <link rel="stylesheet" href="styles/LEDs.css">
+  <link rel="stylesheet" href="styles/DIPswitches.css">
+  <link rel="stylesheet" href="styles/ina700.css">
+  <link rel="stylesheet" href="styles/pmodGPIO.css">
+</head>
+<body>
+  <div>
+    <img src="./styles/microblaze-v-hero-graphic-banner.png">
+  </div>
+  <table>
+    <tr>
+      <th><span class="device-text-title">Push Button</span></th>
+      <th><span class="device-text-title">LEDs</span></th>
+    </tr>
+    <tr>
+      <td><div class="pushB-container" id="pushB-container"></div></td>
+      <td><div class="LEDs-container" id="LEDs-container"></div></td>
+    </tr>
+    <tr>
+      <th><span class="device-text-title">DIP Switches</span></th>
+      <th><span class="device-text-title">INA700 Sensor</span></th>
+    </tr>
+    <tr>
+      <td><div class="DIPs-container" id="DIPs-container"></div></td>
+      <td><div class="ina700-container" id="ina700-container"></div></td>
+    </tr>
+    <tr>
+      <th><span class="device-text-title">Accelerometer</span></th>
+      <!--th><span class="device-text-title">EEPROM</span></th-->
+    </tr>
+    <tr>
+      <td><div class="accel-container" id="accel-container"></div></td>
+      <!--td><div class="eeprom-container" id="eeprom-container"></div></td-->
+    </tr>
+	  <tr>
+      <th colspan="2"><span class="device-text-title">PMOD inputs</span></th>
+    </tr>
+	  <tr>
+      <td colspan="2"><div class="pmod-container" id="pmod-container"></div></td>
+    </tr>
+	
+  </table>
+  <div class="baudrate">
+    <label for="baud-rate">Baud rate:</label>
+    <input type="number" id="baud-rate" value="230400">
+  </div>
+  <button id="connect-btn">Connect to Serial Port</button>
+  <div id="serial-output">
+    Waiting for connection...
+  </div>
+  
+  
+  
+  <!-- Scripts loading -->
+  <script src="./scripts/crc16CCIT_calculator.js"></script>
+  <script src="./scripts/input_manager.js"></script>
+  <script src="./scripts/inputs/pushButton.js"></script>
+  <script src="./scripts/inputs/dipSwitches.js"></script>
+  <script src="./scripts/inputs/ina700.js"></script>
+  <script src="./scripts/inputs/accelerometer.js"></script>
+  <script src="./scripts/inputs/pmodGPIO.js"></script>
+  <script src="./scripts/uart_config.js"></script>
+  <script src="./scripts/outputs/LEDs.js"></script>
+  <script src="./scripts/output_manager.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

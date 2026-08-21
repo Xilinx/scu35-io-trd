@@ -1,0 +1,63 @@
+/* Copyright (C) 2025, Advanced Micro Devices, Inc. All rights reserved.
+SPDX-License-Identifier: MIT */
+body {
+  font-family: Arial, sans-serif;
+  text-align:center;
+  background-color: black;
+  font-size: large;
+  color:white;
+}
+
+table {
+  margin: 0 auto; /* center the table */
+  width: 95%; /* span 95% of the page width */
+}
+
+th {
+  width: 50%;
+  font-size: 20px;
+  border-bottom: none;
+  padding: 0px;
+  color: green;
+  padding-top: 25px;
+}
+
+td {
+  width: 50%;
+  border-top: none;
+  padding-bottom: 45px;
+  text-align: center;
+}
+  
+#serial-output {
+  margin-bottom: 100px;
+  font-size: 24px;
+}
+
+#connect-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+#connect-btn:hover {
+  background-color: #5ca6ff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button active style */
+#connect-btn:active {
+  background-color: #307bdb;
+}
+
+.baudrate {
+  margin-top: 60px;
+}
